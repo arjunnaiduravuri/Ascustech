@@ -187,16 +187,13 @@ li {
     width:300px;
     border-radius: 10px;
 }
-.boxes{
-    width: 80%;
-    margin: auto;
-}
 .main{
     width: 80%;
     display: flex;
     justify-content: center;
     gap:30px;
     margin:10px auto;
+    
 }
 .main1{
     width: 80%;
@@ -204,14 +201,14 @@ li {
     justify-content: center;
     gap:30px;
     margin:10px auto;
-    margin-top: 0px;
+    margin-top: 30px;
     
 }
 .main2{
     width: 80%;
     gap:50px;
-    margin:5px auto;
-    margin-top: 0px;
+    margin:10px auto;
+    margin-top: 30px;
 }
 .icon1{
     width:100%;
@@ -714,7 +711,16 @@ div.navbar{
 .main1,.icon2,.main2,.icon1,.icon3{
     height: auto;
     width: 100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
 }
+.icon{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
 .footer1{
     width:100%;
     margin:auto;
@@ -736,13 +742,19 @@ div.box{
     width:100%;
     height: auto;
     margin:0px;
+    padding: 0px;
 }
 div.left{
     margin:0px;
+    padding: 0px;
 }
 div.right{
     width:100%;
     margin:auto;
+    padding: 0px;
+}
+.matter h2,.matter1 h2{
+    padding-bottom:10px;
 }
 }
 @media (max-width:412px){
@@ -753,6 +765,13 @@ div.right{
 .main1,.icon2,.main2,.icon1,.icon3{
     height: auto;
     width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.icon{
+    width:100%;
+    display:flex;
+    flex-direction: column;
 }
 .footer1{
     width:100%;
@@ -769,6 +788,18 @@ div.box{
 }
 .box i{
    text-align:start;
+}
+div.left{
+    margin:0px;
+    padding: 0px;
+}
+div.right{
+    width:100%;
+    margin:auto;
+    padding: 0px;
+}
+.matter h2,.matter1 h2{
+    padding-bottom:10px;
 }
 }
 @media (max-width:414px){
@@ -779,22 +810,38 @@ div.box{
 .main1,.icon2,.main2,.icon1,.icon3{
     height: auto;
     width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.icon{
+    width:100%;
+    display:flex;
+    flex-direction: column;
 }
 .footer1{
     width:100%;
-    margin:auto;
     display: grid;
     grid-template-columns: auto auto auto;
 }
-div.box{
-    margin-left: -12px;
-}
 .box{
     width:100%;
-    padding:10px;
 }
 .box i{
-   text-align:start;
+  margin:0px;
+  padding: 0px;
+ 
+}
+div.left{
+    margin:0px;
+    padding: 0px;
+}
+div.right{
+    width:100%;
+    margin:auto;
+    padding: 0px;
+}
+.matter h2,.matter1 h2{
+    padding-bottom:10px;
 }
 }
 @media (max-width:430px){
@@ -805,6 +852,13 @@ div.box{
 .main1,.icon2,.main2,.icon1,.icon3{
     height: auto;
     width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+.icon{
+    width:100%;
+    display:flex;
+    flex-direction: column;
 }
 .footer1{
     width:100%;
@@ -821,6 +875,18 @@ div.box{
 }
 .box i{
    text-align:start;
+}
+div.left{
+    margin:0px;
+    padding: 0px;
+}
+div.right{
+    width:100%;
+    margin:auto;
+    padding: 0px;
+}
+.matter h2,.matter1 h2{
+    padding-bottom:10px;
 }
 }
 @media (max-width:1000px){
@@ -940,6 +1006,15 @@ div.box{
        .matter1 p{
         width: 100%;
        }
+       div.left{
+        margin:0px;
+        padding: 0px;
+    }
+    div.right{
+        width:100%;
+        margin:auto;
+        padding: 0px;
+    }
 
 }
 @media (max-width:450px){
@@ -1012,6 +1087,18 @@ div.box{
     .navbar h5{
         font-size: 1.3rem;
     }
+    div.left{
+        margin:0px;
+        padding: 0px;
+    }
+    div.right{
+        width:100%;
+        margin:auto;
+        padding: 0px;
+    }
+    .matter h2,.matter1 h2{
+        padding-bottom:10px;
+    }
     }
 @media (max-width:1250px){
     .footer{
@@ -1068,6 +1155,15 @@ div.box{
         width:100%;
         margin:auto;
        }
+       div.left{
+        margin:0px;
+        padding: 0px;
+    }
+    div.right{
+        width:100%;
+        margin:auto;
+        padding: 0px;
+    }
 }
 @media (max-width:912px){
 .right{
@@ -1101,10 +1197,31 @@ div.box{
         width:100%; 
         margin:auto;
     }
+    div.left{
+        margin:0px;
+        padding: 0px;
+    }
+    div.right{
+        width:100%;
+        margin:auto;
+        padding: 0px;
+    }
+    .matter h2,.matter1 h2{
+        padding-bottom:10px;
+    }
 }
 @media (max-width:340px){
     .navbar{
         width:100%;
+    }
+    div.left{
+        margin:0px;
+        padding: 0px;
+    }
+    div.right{
+        width:100%;
+        margin:auto;
+        padding: 0px;
     }
 
 }
@@ -1118,6 +1235,15 @@ div.box{
     .navbar h5{
         font-size: 1rem;
     }
+    div.left{
+        margin:0px;
+        padding: 0px;
+    }
+    div.right{
+        width:100%;
+        margin:auto;
+        padding: 0px;
+    }
 
 }
 @media (max-width:375px){
@@ -1130,6 +1256,15 @@ div.box{
     .navbar h5{
         font-size: 1rem;
     }
+    div.left{
+        margin:0px;
+        padding: 0px;
+    }
+    div.right{
+        width:100%;
+        margin:auto;
+        padding: 0px;
+    }
 }
 @media (max-width:390px){
     .navbar{
@@ -1140,6 +1275,23 @@ div.box{
     }
     .navbar h5{
         font-size: 1.1rem;
+    }
+    div.left{
+        margin:0px;
+        padding: 0px;
+    }
+    div.right{
+        width:100%;
+        margin:auto;
+        padding: 0px;
+        margin: 0px;
+    }
+    .box{
+        width:100px;
+        margin-right:-10px;
+    }
+    .matter h2,.matter1 h2{
+        padding-bottom:10px;
     }
 
 }

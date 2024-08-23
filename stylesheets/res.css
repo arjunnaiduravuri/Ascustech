@@ -1,0 +1,132 @@
+.sideNav{
+    display: none;
+}
+.footerLinks{
+    display: flex;
+    gap: 150px;
+}
+@media (max-width:800px){
+    .home{
+        display: none;
+    }
+    .nav{
+        
+    }
+    .lines .bar{
+        width: 40px;
+        height: 4px;
+        background-color: black;
+    }
+    .sideNav{
+        display: block;
+
+    }
+    #side{
+        display: none;
+    }
+    .lines{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .Slide{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: white;
+        transition: 0.8s;
+        z-index: 10;
+    }
+    #side:checked ~ .Slide{
+        right: 0;
+    }
+    .SideTop{
+        text-align: right;
+      
+        font-size: 2.6rem;
+        font-weight: 700;
+        padding: 20px 0;
+        padding-right: 50px;
+        
+    }
+    .foot1{
+        flex-direction: column;
+    }
+    .image1{
+        width: 300px;
+    }
+    .footerLinks{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .f2,.f3{
+        width: 50%;
+    }
+    .f4{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .f1{
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .image3{
+        width: 80%;
+       
+    }
+    .f-icons{
+        
+        gap: 10px;
+    }
+    .ser2{
+        display: none;
+        
+    }
+    .SlideLinks{
+       
+        padding-left: 30px;
+    }
+    .SlideLinks li{
+        
+        padding: 5px 0;
+    }
+    .SlideLinks li a{
+        text-decoration: none;
+        color: black;
+    }
+    .SlideLinks input{
+        display: none;
+    }
+    .SlideLinks a,.SlideLinks label{
+        font-size: 1.2rem;
+    }
+    
+    .cc,.aLinks{
+        display: flex;
+        flex-direction: column;
+        padding: 8px 0;
+        gap: 10px;
+        display: none;
+       
+    }
+    #aLink:checked ~ .aLinks,#sLink:checked ~ .cc{
+        display: flex;
+    }
+    #aLink:checked ~ label i,#sLink:checked ~ label i{
+        transform: rotate(180deg);
+    }
+
+}
+@media (max-width:500px){
+    .image1{
+        width: 200px;
+    }
+}

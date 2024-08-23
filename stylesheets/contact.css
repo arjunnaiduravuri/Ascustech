@@ -400,6 +400,20 @@ margin-bottom: 10px;
        margin:auto;
       
    }
+   .set{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+   }
+   .set label{
+    width:100%;
+   }
+   .set input{
+    width:100%;
+   }
+   .set textarea{
+    width:100%;
+   }
 }
 @media (max-width:1024px){
     .matter img{
